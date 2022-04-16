@@ -1,5 +1,13 @@
+main {
+  padding-top: 2%;
+  margin-bottom: 5%;
+}
+
 nav {
-  background: #1C1B25;
-  color: #FB8900;
+  background-color: lightcoral;
+}
+
+footer {
+  background-color: light blue;
 }
 /*# sourceMappingURL=style.css.map */
