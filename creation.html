@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
-    
+    <script src="code.js" defer></script>
+
     <title>TP2-Intégration</title>
 </head>
 <body class="p-4">
@@ -65,11 +65,11 @@
                     <div class="col-5">
                         <div class="row">
                             <div class="col-6">
-                                <input class="" type="radio" name="personnageRadio" id="personnageRadio1">
+                                <input class="" type="radio" name="personnageRadio" id="personnageRadio1" checked>
                                 <img src="images/goku.png" alt="Son Goku">
                             </div>
                             <div class="col-6">
-                                <input class="" type="radio" name="personnageRadio" id="personnageRadio2" checked>
+                                <input class="" type="radio" name="personnageRadio" id="personnageRadio2">
                                 <img src="images/vegeta.png" alt="Vegeta">
                             </div>
                         </div>
@@ -79,7 +79,7 @@
                                 <img src="images/broly.png" alt="Broly">
                             </div>
                             <div class="col-6">
-                                <input class="" type="radio" name="personnageRadio" id="personnageRadio2" checked>
+                                <input class="" type="radio" name="personnageRadio" id="personnageRadio2">
                                 <img src="images/kidBuu.png" alt="Kid Buu">
                             </div>
                         </div>
@@ -89,7 +89,7 @@
                                 <img src="images/freeza.png" alt="Freeza">
                             </div>
                             <div class="col-6">
-                                <input class="" type="radio" name="personnageRadio" id="personnageRadio2" checked>
+                                <input class="" type="radio" name="personnageRadio" id="personnageRadio2">
                                 <img src="images/cell.png" alt="Cell">
                             </div>
                         </div>
@@ -133,17 +133,21 @@
                             <option value="2">10% plus d'xp</option>
                             <option value="3">10% plus d'or</option>
                         </select>
-                        <label for="customRange2" class="form-label">Attaque</label>
-                        <input type="range" class="form-range" min="0" max="10" id="customRange2">
-                        <label for="customRange2" class="form-label">Défence</label>
-                        <input type="range" class="form-range" min="0" max="10" id="customRange2">
-                        <label for="customRange2" class="form-label">Santé</label>
-                        <input type="range" class="form-range" min="0" max="10" id="customRange2">
-                        <label for="customRange2" class="form-label">Vitesse</label>
-                        <input type="range" class="form-range" min="0" max="10" id="customRange2">
-                        <button type="button" class="btn btn-success">Envoyer</button>
-                        <button type="button" class="btn btn-danger">Annuler</button>
-                        <button type="button" class="btn btn-outline-warning">
+                        <label for="attaque" class="form-label">Attaque :</label>
+                        <label id="attaque" for="points" class="form-label"></label>
+                        <input id="range1" type="range" class="form-range" min="0" max="10">
+                        <label for="défense" class="form-label">Défense :</label>
+                        <label id="defense" for="points" class="form-label"></label>
+                        <input id="range2" type="range" class="form-range" min="0" max="10">
+                        <label for="santé" class="form-label">Santé :</label>
+                        <label id="sante" for="points" class="form-label"></label>
+                        <input id="range3" type="range" class="form-range" min="0" max="10">
+                        <label for="vitesse" class="form-label">Vitesse :</label>
+                        <label id="vitesse" for="points" class="form-label"></label>
+                        <input id="range4" type="range" class="form-range" min="0" max="10">
+                        <button type="submit" class="btn btn-success">Envoyer</button>
+                        <button id="reset" type="reset" class="btn btn-danger">Annuler</button>
+                        <button id="aleatoire" type="button" class="btn btn-outline-warning">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dice-5" viewBox="0 0 16 16">
                             <path d="M13 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"/>
                             <path d="M5.5 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm8 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-8 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm4-4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
