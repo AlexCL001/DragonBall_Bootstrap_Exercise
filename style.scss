@@ -1,13 +1,8 @@
+$primary: black;
+$secondary: white;
+$success: orange;
+$form-range-thumb-active-bg: orange;
+$form-range-thumb-bg: orange;
+$form-check-input-checked-bg-color: orange;
+
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
-main {
-    padding-top: 2%;
-    margin-bottom: 5%;
-}
-
-nav {
-    background-color: lightcoral;
-}
-
-footer {
-    background-color: light blue;
-}
