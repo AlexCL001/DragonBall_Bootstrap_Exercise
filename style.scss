@@ -6,3 +6,23 @@ $form-range-thumb-bg: orange;
 $form-check-input-checked-bg-color: orange;
 
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
+
+
+a {
+    color: $primary;
+    text-decoration: none;
+} 
+
+.animate {
+    animation: slide-in 1.7s both;
+    animation-delay: 500ms;
+  }
+  
+  @keyframes slide-in {
+    0% {
+      transform: translateX(1500px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }

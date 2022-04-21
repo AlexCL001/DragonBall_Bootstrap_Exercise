@@ -12,22 +12,22 @@
 <body class="p-4">
     <div class="container-fluid">
         <header class="row">
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg bg-primary">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
+                    <a class="navbar-brand text-secondary" href="#">Navbar</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link text-secondary active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link text-secondary" href="#">Link</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link text-secondary dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Dropdown
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -49,77 +49,73 @@
                 </div>
             </nav>
         </header>
-        <main class="row">
+        <main class="row bg-primary text-secondary py-4">
             <div class="d-flex align-items-start col-2">
                 <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <button class="nav-link active" id="v-pills-index-tab" data-bs-toggle="pill" data-bs-target="#v-pills-index" type="button" role="tab" aria-controls="v-pills-index" aria-selected="true">Accueil</button>
-                    <button class="nav-link" id="v-pills-creation-tab" data-bs-toggle="pill" data-bs-target="#v-pills-creation" type="button" role="tab" aria-controls="v-pills-creation" aria-selected="false">Créer un personnage</button>
-                    <button class="nav-link" id="v-pills-personnages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-personnages" type="button" role="tab" aria-controls="v-pills-personnages" aria-selected="false">Liste des personnages</button>
-                    <button class="nav-link" id="v-pills-defaut-tab" data-bs-toggle="pill" data-bs-target="#v-pills-defaut" type="button" role="tab" aria-controls="v-pills-defaut" aria-selected="false">Personnage par defaut</button>
-                    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Bonus</button>
+                    <button class="nav-link text-secondary active" id="v-pills-index-tab" data-bs-toggle="pill" data-bs-target="#v-pills-index" type="button" role="tab" aria-controls="v-pills-index" aria-selected="true">Accueil</button>
+                    <button class="nav-link text-secondary" id="v-pills-creation-tab" data-bs-toggle="pill" data-bs-target="#v-pills-creation" type="button" role="tab" aria-controls="v-pills-creation" aria-selected="false">Créer un personnage</button>
+                    <button class="nav-link text-secondary" id="v-pills-personnages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-personnages" type="button" role="tab" aria-controls="v-pills-personnages" aria-selected="false">Liste des personnages</button>
+                    <button class="nav-link text-secondary" id="v-pills-defaut-tab" data-bs-toggle="pill" data-bs-target="#v-pills-defaut" type="button" role="tab" aria-controls="v-pills-defaut" aria-selected="false">Personnage par defaut</button>
+                    <button class="nav-link text-secondary" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Bonus</button>
                 </div>
             </div>
-            <div class="col-10">
-                <div class="row">
-                    <div class="card-group">
-                        <div class="card">
-                            <img src="images/kidbuu.jpeg" class="card-img-top "  alt="image de kid buu">
-                            <div class="card-body">
-                                <h5 class="card-title">Kid Buu</h5>
-                                <label for="customRange2" class="form-label">Attaque : 2</label>
-                                <input disabled type="range" class="form-range" min="0" max="10"  value="2" id="customRange2">
-                                <label for="customRange2" class="form-label">Défence : 8</label>
-                                <input disabled type="range" class="form-range" min="0" max="10" value="8" id="customRange2">
-                                <label for="customRange2" class="form-label">Santé : 6</label>
-                                <input disabled type="range" class="form-range" min="0" max="10" value="6" id="customRange2">
-                                <label for="customRange2" class="form-label">Vitesse : 4</label>
-                                <input disabled type="range" class="form-range" min="0" max="10" value="4" id="customRange2">
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="images/broly.jpeg" class="card-img-top" alt="image de broly">
-                            <div class="card-body">
-                                <h5 class="card-title">Goku</h5>
-                                <label for="customRange2" class="form-label">Attaque : 9</label>
-                                <input disabled type="range" class="form-range" min="0" max="10" value="9" id="customRange2">
-                                <label for="customRange2" class="form-label">Défence : 3</label>
-                                <input disabled type="range" class="form-range" min="0" max="10" value="3" id="customRange2">
-                                <label for="customRange2" class="form-label">Santé : 5</label>
-                                <input disabled type="range" class="form-range" min="0" max="10" value="5" id="customRange2">
-                                <label for="customRange2" class="form-label">Vitesse : 7</label>
-                                <input disabled type="range" class="form-range" min="0" max="10" value="7" id="customRange2">
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="images/cell.jpeg" class="card-img-top " alt="image de cell">
-                            <div class="card-body">
-                                <h5 class="card-title">Cell</h5>
-                                <label for="customRange2" class="form-label">Attaque : 6</label>
-                                <input disabled type="range" class="form-range" min="0" max="10" value="6" id="customRange2">
-                                <label for="customRange2" class="form-label">Défence : 3</label>
-                                <input disabled type="range" class="form-range" min="0" max="10" value="3" id="customRange2">
-                                <label for="customRange2" class="form-label">Santé : 6</label>
-                                <input disabled type="range" class="form-range" min="0" max="10" value="6" id="customRange2">
-                                <label for="customRange2" class="form-label">Vitesse : 7</label>
-                                <input disabled type="range" class="form-range" min="0" max="10" value="7" id="customRange2">
-                            </div>
-                        </div>
-                        <div class="card">
-                                <img src="images/vegeta.jpeg" class="card-img-top" alt="image de vegeta">
-                                <div class="card-body">
-                                <h5 class="card-title">Vegeta</h5>
-                                <label for="customRange2" class="form-label">Attaque : 8</label>
-                                <input disabled type="range" class="form-range" min="0" max="10" value="8" id="customRange2">
-                                <label for="customRange2" class="form-label">Défence : 4</label>
-                                <input disabled type="range" class="form-range" min="0" max="10" value="4" id="customRange2">
-                                <label for="customRange2" class="form-label">Santé : 1</label>
-                                <input disabled type="range" class="form-range" min="0" max="10" value="1" id="customRange2">
-                                <label for="customRange2" class="form-label">Vitesse : 7</label>
-                                <input disabled type="range" class="form-range" min="0" max="10" value="7" id="customRange2">
-                                </div>
-                          </div>
-                      </div>
+            <div class="col-10 justify-content-center animate row">
+                <div class="card bg-success col-md-6 col-lg-3 m-2" style="width: 11rem;">
+                    <img src="images/kidbuu.jpeg" class="card-img-top stretched-link"  alt="image de kid buu">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#" class="stretched-link">Kid Buu</a></h5>
+                        <label for="customRange2" class="form-label">Attaque : 2</label>
+                        <input disabled type="range" class="form-range" min="0" max="10"  value="2" id="customRange2">
+                        <label for="customRange2" class="form-label">Défence : 8</label>
+                        <input disabled type="range" class="form-range" min="0" max="10" value="8" id="customRange2">
+                        <label for="customRange2" class="form-label">Santé : 6</label>
+                        <input disabled type="range" class="form-range" min="0" max="10" value="6" id="customRange2">
+                        <label for="customRange2" class="form-label">Vitesse : 4</label>
+                        <input disabled type="range" class="form-range" min="0" max="10" value="4" id="customRange2">
+                    </div>
                 </div>
+                <div class="card bg-success col-md-6 col-lg-3 m-2" style="width: 11rem;">
+                    <img src="images/broly.jpeg" class="card-img-top" alt="image de broly">
+                    <div class="card-body">
+                        <h5 class="card-title text-success"><a href="#" class="stretched-link">Goku</a></h5>
+                        <label for="customRange2" class="form-label">Attaque : 9</label>
+                        <input disabled type="range" class="form-range" min="0" max="10" value="9" id="customRange2">
+                        <label for="customRange2" class="form-label">Défence : 3</label>
+                        <input disabled type="range" class="form-range" min="0" max="10" value="3" id="customRange2">
+                        <label for="customRange2" class="form-label">Santé : 5</label>
+                        <input disabled type="range" class="form-range" min="0" max="10" value="5" id="customRange2">
+                        <label for="customRange2" class="form-label">Vitesse : 7</label>
+                        <input disabled type="range" class="form-range" min="0" max="10" value="7" id="customRange2">
+                    </div>
+                </div>
+                <div class="card  bg-success col-md-6 col-lg-3 m-2" style="width: 11rem;">
+                    <img src="images/cell.jpeg" class="card-img-top " alt="image de cell">
+                    <div class="card-body">
+                        <h5 class="card-title text-success"><a href="#" class="stretched-link">Cell</a></h5>
+                        <label for="customRange2" class="form-label">Attaque : 6</label>
+                        <input disabled type="range" class="form-range" min="0" max="10" value="6" id="customRange2">
+                        <label for="customRange2" class="form-label">Défence : 3</label>
+                        <input disabled type="range" class="form-range" min="0" max="10" value="3" id="customRange2">
+                        <label for="customRange2" class="form-label">Santé : 6</label>
+                        <input disabled type="range" class="form-range" min="0" max="10" value="6" id="customRange2">
+                        <label for="customRange2" class="form-label">Vitesse : 7</label>
+                        <input disabled type="range" class="form-range" min="0" max="10" value="7" id="customRange2">
+                    </div>
+                </div>
+                <div class="card  bg-success col-md-6 col-lg-2 m-2" style="width: 11rem;">
+                    <img src="images/vegeta.jpeg" class="card-img-top" alt="image de vegeta">
+                    <div class="card-body ">
+                        <h5 class="card-title"><a href="#" class="stretched-link">Vegeta</a></h5>
+                        <label for="customRange2" class="form-label">Attaque : 8</label>
+                        <input disabled type="range" class="form-range color-success" min="0" max="10" value="8" id="customRange2">
+                        <label for="customRange2" class="form-label">Défence : 4</label>
+                        <input disabled type="range" class="form-range" min="0" max="10" value="4" id="customRange2">
+                        <label for="customRange2" class="form-label">Santé : 1</label>
+                        <input disabled type="range" class="form-range" min="0" max="10" value="1" id="customRange2">
+                        <label for="customRange2" class="form-label">Vitesse : 7</label>
+                        <input disabled type="range" class="form-range" min="0" max="10" value="7" id="customRange2">
+                    </div>
+                </div>      
             </div>
         </main>
         <footer class="row bg-info">
