@@ -7674,7 +7674,7 @@ fieldset:disabled .btn {
   display: inline-block !important;
 }
 
-.d-block {
+.d-block, .carrousel {
   display: block !important;
 }
 
@@ -8099,7 +8099,7 @@ fieldset:disabled .btn {
       justify-content: space-around !important;
 }
 
-.justify-content-evenly {
+.justify-content-evenly, .animation {
   -webkit-box-pack: space-evenly !important;
       -ms-flex-pack: space-evenly !important;
           justify-content: space-evenly !important;
@@ -8304,7 +8304,7 @@ fieldset:disabled .btn {
   margin-left: 3rem !important;
 }
 
-.mx-auto {
+.mx-auto, .carrousel {
   margin-right: auto !important;
   margin-left: auto !important;
 }
@@ -11962,7 +11962,7 @@ a {
   text-decoration: none;
 }
 
-.animate {
+.animate, .animation {
   -webkit-animation: slide-in 1.7s both;
           animation: slide-in 1.7s both;
   -webkit-animation-delay: 500ms;
