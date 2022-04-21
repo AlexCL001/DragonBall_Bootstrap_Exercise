@@ -26,3 +26,13 @@ a {
       transform: translateX(0);
     }
   }
+
+.animation {
+    @extend .animate;
+    @extend .justify-content-evenly;
+  }
+
+.carrousel {
+    @extend .mx-auto;
+    @extend .d-block;
+}
