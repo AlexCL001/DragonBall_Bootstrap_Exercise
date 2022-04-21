@@ -11956,4 +11956,38 @@ fieldset:disabled .btn {
     display: none !important;
   }
 }
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.animate {
+  -webkit-animation: slide-in 1.7s both;
+          animation: slide-in 1.7s both;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+@-webkit-keyframes slide-in {
+  0% {
+    -webkit-transform: translateX(1500px);
+            transform: translateX(1500px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    -webkit-transform: translateX(1500px);
+            transform: translateX(1500px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
 /*# sourceMappingURL=style.css.map */
