@@ -15,20 +15,20 @@
         <header class="row">
             <nav class="navbar navbar-expand-lg bg-primary">
                 <div class="container-fluid">
-                    <a class="navbar-brand text-secondary" href="#">Navbar</a>
+                    <a class="navbar-brand" href="#">Navbar</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active text-secondary" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-secondary" href="#">Link</a>
+                                <a class="nav-link" href="#">Link</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Dropdown
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -64,31 +64,31 @@
                 <div class="col-sm-12 col-xl-6">
                     <div class="row">
                         <div class="col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
-                            <input class="form-check-input" type="radio" name="personnageRadio" id="personnageRadio1" checked>
+                            <input class="form-check-input" type="radio" name="personnageRadio" id="personnageRadio1" checked aria-label="son goku">
                             <img class="m-3" src="images/goku.png" alt="Son Goku">
                         </div>
                         <div class="col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
-                            <input class="form-check-input" type="radio" name="personnageRadio" id="personnageRadio2">
+                            <input class="form-check-input" type="radio" name="personnageRadio" id="personnageRadio2" aria-label="vegeta">
                             <img class="m-3" src="images/vegeta.png" alt="Vegeta">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
-                            <input class="form-check-input" type="radio" name="personnageRadio" id="personnageRadio1">
+                            <input class="form-check-input" type="radio" name="personnageRadio" id="personnageRadio1" aria-label="broly">
                             <img class="m-3" src="images/broly.png" alt="Broly">
                         </div>
                         <div class="col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
-                            <input class="form-check-input" type="radio" name="personnageRadio" id="personnageRadio2">
+                            <input class="form-check-input" type="radio" name="personnageRadio" id="personnageRadio2" aria-label="kid buu">
                             <img class="m-3" src="images/kidBuu.png" alt="Kid Buu">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
-                            <input class="form-check-input" type="radio" name="personnageRadio" id="personnageRadio1">
+                            <input class="form-check-input" type="radio" name="personnageRadio" id="personnageRadio1" aria-label="freeza">
                             <img class="m-3" src="images/freeza.png" alt="Freeza">
                         </div>
                         <div class="col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
-                            <input class="form-check-input" type="radio" name="personnageRadio" id="personnageRadio2">
+                            <input class="form-check-input" type="radio" name="personnageRadio" id="personnageRadio2" aria-label="cell">
                             <img class="m-3" src="images/cell.png" alt="Cell">
                         </div>
                     </div>
@@ -97,37 +97,44 @@
                     <h2 class="text-success my-3">Création du personnage</h2>
                     <div class="mb-3">
                         <label for="Nom du personnage" class="form-label">Nom du personnage :</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div class="form-text">Le nom du personnage ne peut pas contenir de caractères spéciaux</div>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-label="Nom du personnage">
+                        <div class="form-text">Le nom du personnage ne peut pas contenir de caractères spéciaux.</div>
                     </div>
                     <label for="Race du personnage" class="form-label">Race du personnage :</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="classePersonnage" id="classePersonnage" checked>
+                        <input class="form-check-input" type="radio" name="classePersonnage" id="classePersonnage" checked  aria-label="saiyan">
                         <label class="form-check-label" for="classePersonnage">
                             Saiyan
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="classePersonnage" id="classePersonnage">
+                        <input class="form-check-input" type="radio" name="classePersonnage" id="classePersonnage" aria-label="namek">
                         <label class="form-check-label" for="classePersonnage">
                             Namek
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="classePersonnage" id="classePersonnage">
+                        <input class="form-check-input" type="radio" name="classePersonnage" id="classePersonnage" aria-label="ange">
                         <label class="form-check-label" for="classePersonnage">
                             Ange
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="classePersonnage" id="classePersonnage">
+                        <input class="form-check-input" type="radio" name="classePersonnage" id="classePersonnage"  aria-label="android">
                         <label class="form-check-label" for="classePersonnage">
                             Android
                         </label>
                     </div>
+                    <label class="my-3" for="Choisir une couleur">Choisir une couleur de vêtement :</label>
+                    <br>
+                    <input type="color" aria-label="choisir une couleur">
                     <h2 class="text-success my-3">Caractéristiques du personnage</h2>
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label">Ajouter un objet :</label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
                     <label for="Capacité unique" class="form-label">Capacité unique :</label>
-                    <select class="form-select mb-3" aria-label="Default select example">
+                    <select class="form-select mb-3" aria-label="Capacité unique">
                         <option selected>10% plus de dégat</option>
                         <option value="1">10% plus de défense</option>
                         <option value="2">10% plus d'xp</option>
@@ -135,16 +142,16 @@
                     </select>
                     <label for="attaque" class="form-label">Attaque :</label>
                     <label id="attaque" for="points" class="form-label"></label>
-                    <input id="range1" type="range" class="form-range color-success" min="0" max="10">
+                    <input aria-label="range input 1" id="range1" type="range" class="form-range color-success" min="0" max="10">
                     <label for="défense" class="form-label">Défense :</label>
                     <label id="defense" for="points" class="form-label"></label>
-                    <input id="range2" type="range" class="form-range" min="0" max="10">
+                    <input aria-label="range input 2" id="range2" type="range" class="form-range" min="0" max="10">
                     <label for="santé" class="form-label">Santé :</label>
                     <label id="sante" for="points" class="form-label"></label>
-                    <input id="range3" type="range" class="form-range" min="0" max="10">
+                    <input aria-label="range input 3" id="range3" type="range" class="form-range" min="0" max="10">
                     <label for="vitesse" class="form-label">Vitesse :</label>
                     <label id="vitesse" for="points" class="form-label"></label>
-                    <input id="range4" type="range" class="form-range" min="0" max="10">
+                    <input aria-label="range input 4" id="range4" type="range" class="form-range" min="0" max="10">
                     <button type="submit" class="btn btn-success my-5">Envoyer</button>
                     <button id="reset" type="reset" class="btn btn-success">Annuler</button>
                     <button id="aleatoire" type="button" class="btn btn-outline-warning">

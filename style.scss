@@ -5,13 +5,13 @@ $form-range-thumb-active-bg: orange;
 $form-range-thumb-bg: orange;
 $form-check-input-checked-bg-color: orange;
 
+
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 
-
 a {
-    color: $primary;
+    color: $secondary;
     text-decoration: none;
-} 
+}
 
 .animate {
     animation: slide-in 1.7s both;
