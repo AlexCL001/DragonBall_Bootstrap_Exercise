@@ -12,9 +12,12 @@
     <script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-                        $(".btn").click(function(){
-                                       $("#fenetreRecherche").modal('show');
-                        });
+            $("#loupe").click(function(){
+                $("#fenetreRecherche").modal('show');
+            });
+            $(".close, #fermer, #sauvegarder").click(function(){
+                $("#fenetreRecherche").modal('hide');
+            });
         });
         </script>    
     
@@ -43,7 +46,7 @@
                     </ul>
                     <form class="input-group pe-3 w-50">
                         <input class="form-control" type="search" placeholder="Chercher" aria-label="Chercher">
-                        <button class="btn btn-primary text-white fw-bold" type="button"data-toggle="modal" data-target="#faireRecherche">
+                        <button id="loupe" class="btn btn-primary text-white fw-bold" type="button"data-toggle="modal" data-target="#faireRecherche">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
                             </svg>
@@ -57,7 +60,7 @@
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="fenetreRecherche">Résultats de recherche</h5>
+                  <h5 class="modal-title">Résultats de recherche</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -71,8 +74,8 @@
                   </ul>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary text-light" data-dismiss="modal">Fermer</button>
-                  <button type="button" class="btn btn-primary text-light">Sauvegarder</button>
+                  <button id="fermer" type="button" class="btn btn-primary text-light" data-dismiss="modal">Fermer</button>
+                  <button id="sauvegarder" type="button" class="btn btn-primary text-light">Sauvegarder</button>
                 </div>
               </div>
             </div>
