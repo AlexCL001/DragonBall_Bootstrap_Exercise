@@ -1,10 +1,28 @@
-<main class="row bg-primary text-secondary py-4">
-    <div class="d-flex align-items-start col-2">
-        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <button class="nav-link active text-secondary" id="v-pills-index-tab" data-bs-toggle="pill" data-bs-target="#v-pills-index" type="button" role="tab" aria-controls="v-pills-index" aria-selected="true"><a href="/">Accueil</a></button>
-            <button class="nav-link text-secondary" id="v-pills-creation-tab" data-bs-toggle="pill" data-bs-target="#v-pills-creation" type="button" role="tab" aria-controls="v-pills-creation" aria-selected="false"><a href="/creation">Créer un personnage</a></button>
-            <button class="nav-link text-secondary" id="v-pills-personnages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-personnages" type="button" role="tab" aria-controls="v-pills-personnages" aria-selected="false"><a href="/personnages">Liste des personnages</a></button>
-            <button class="nav-link text-secondary" id="v-pills-defaut-tab" data-bs-toggle="pill" data-bs-target="#v-pills-defaut" type="button" role="tab" aria-controls="v-pills-defaut" aria-selected="false"><a href="/defaut">Personnage par defaut</a></button>
-            <button class="nav-link text-secondary" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Bonus</button>
-        </div>
-    </div>
+<main class="row bg-dark bg-opacity-75 py-4">
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <defs><symbol id="arrow" viewBox="0 0 100 100"><path d="M12.5 45.83h64.58v8.33H12.5z"/><path d="M59.17 77.92l-5.84-5.84L75.43 50l-22.1-22.08 5.84-5.84L87.07 50z"/></symbol></defs>
+    </svg>
+    <nav class="nav flex-column col-md-3 pb-4">
+        <a href="/" class="button">
+            <span>Accueil</span>
+            <span><svg><use xlink:href="#arrow" href="#arrow"></use></svg></span>
+        </a>
+        <a href="/creation" class="button">
+            <span>Créer un personnage</span>
+            <span><svg><use xlink:href="#arrow" href="#arrow"></use></svg></span>
+        </a>
+        <a href="/personnages" class="button">
+            <span>Personnages créés</span>
+            <span><svg><use xlink:href="#arrow" href="#arrow"></use></svg></span>
+        </a>
+        <a href="/defaut" class="button">
+            <span>Par défaut</span>
+            <span><svg><use xlink:href="#arrow" href="#arrow"></use></svg></span>
+        </a>
+    </nav>
+
+
+    <div class="col-md-9">
+        <div class="row" id="contenuPrincipal">
